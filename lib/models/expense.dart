@@ -6,13 +6,13 @@ final formatter = DateFormat.yMd();
 
 const uuid = Uuid();
 
-enum Category { food, travel, leisure, work }
+enum Categoryy { food, travel, leisure, work }
 
 const categoryIcons = {
-  Category.food: Icons.lunch_dining,
-  Category.travel: Icons.flight_takeoff,
-  Category.leisure: Icons.movie,
-  Category.work: Icons.work,
+  Categoryy.food: Icons.lunch_dining,
+  Categoryy.travel: Icons.flight_takeoff,
+  Categoryy.leisure: Icons.movie,
+  Categoryy.work: Icons.work,
 };
 
 class Expense {
@@ -27,7 +27,7 @@ class Expense {
   final String title;
   final double amount;
   final DateTime date;
-  final Category category;
+  final Categoryy category;
 
   String get formattedDate {
     return formatter.format(date);
